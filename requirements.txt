@@ -1,0 +1,29 @@
+# Setup
+setuptools
+wheel
+
+# Data
+pandas
+requests
+PyYAML
+
+# Google Cloud
+google-cloud
+google-cloud-bigquery
+google-cloud-storage
+
+# Data visualization
+# matplotlib
+# seaborn
+# plotly
+
+# Math
+scipy
+scikit-learn
+# xgboost
+# optuna
+
+# Services
+# openai
+# jupyterlab
+# slack_sdk
