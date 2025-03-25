@@ -3,10 +3,20 @@ Template for a Python library that supports data science projects. Setup uses `p
 
 ## Setup
 
+##### Initialization
+
 Initialize poetry.
 ```
 poetry install
 ```
+
+Install poetry dependencies.
+```
+./install_dependencies.sh
+```
+
+
+##### Common tasks
 
 Run Jupyter Lab.
 ```
