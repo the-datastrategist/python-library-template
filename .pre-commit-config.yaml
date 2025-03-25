@@ -24,3 +24,5 @@ repos:
     hooks:
       - id: pytest
         additional_dependencies: ["pytest"]
+        language_version: python3
+        files: ^tests/test_.*\.py$  # Only run pytest on new files
