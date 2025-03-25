@@ -3,6 +3,8 @@ Template for a Python library that supports data science projects.
 
 ## Setup
 
-#### Run `poetry`
+#### Install & run poetry
+```
 poetry install
 poetry build
+```
