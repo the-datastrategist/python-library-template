@@ -2,7 +2,7 @@
 name = "my_data_toolkit"
 version = "0.1.0"
 description = "Reusable tools for data analysis"
-authors = ["Your Name <you@example.com>"]
+authors = ["Gordon Silvera <gordon@thedatastrategist.com>"]
 license = "MIT"
 readme = "README.md"
 packages = [{ include = "my_data_toolkit", from = "src" }]
@@ -34,3 +34,6 @@ profile = "black"
 
 [tool.pytest.ini_options]
 addopts = "-v"
+
+[tool.poetry.scripts]
+data_toolkit = "my_data_toolkit.cli:app"
