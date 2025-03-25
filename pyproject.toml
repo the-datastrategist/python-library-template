@@ -1,15 +1,17 @@
-[tool.poetry]
-name = "my_toolkit"
-version = "0.1.0"
-description = "A template for supporting data science projects"
-authors = ["Gordon Silvera"]
-
-[tool.poetry.dependencies]
-python = ">=3.9"
-pandas = "^1.5"
-numpy = "^1.22"
-scikit-learn = "^1.2"
-
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my-toolkit"
+version = "0.1.0"
+description = "A sample package"
+authors = [
+  { name="Gordon Silvera", email="gordon@thedatastrategist.com" }
+  ]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pandas",
+    "scikit-learn",
+]
