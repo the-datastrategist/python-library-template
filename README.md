@@ -18,6 +18,18 @@ Run tests.
 poetry run pytest
 ```
 
+## CLI
+
+You can add a CLI endpoint by adding the following code to `pyproject.toml`:
+```
+[tool.poetry.scripts]
+data_toolkit = "my_data_toolkit.cli:app"
+```
+This allows you to run the following as an endpoint:
+```
+poetry run data_toolkit clean-csv input.csv output.csv
+```
+
 
 ## Next Steps
 - Drop datasets or exploratory files into `notebooks/`
@@ -39,8 +51,6 @@ Use the following code to run all pre-commit files. Each pre-commit file is outl
 ```
 poetry run pre-commit run --all-files
 ```
-
-<br>
 
 ##### `black`
 Code Formatter. Enforces a consistent and clean code style. You don't need to argue about indentation or spacing ever again.
