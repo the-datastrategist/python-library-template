@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "my_data_toolkit"
+name = "my_toolkit"
 version = "0.1.0"
-description = "A toolkit for analyzing sales data"
-authors = ["Your Name"]
+description = "A template for supporting data science projects"
+authors = ["Gordon Silvera"]
 
 [tool.poetry.dependencies]
 python = ">=3.9"
