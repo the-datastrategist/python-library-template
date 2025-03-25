@@ -1,3 +1,7 @@
+# Setup
+setuptools
+wheel
+
 # Data
 pandas
 requests
