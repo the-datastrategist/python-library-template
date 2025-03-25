@@ -28,27 +28,40 @@ poetry run pytest
 
 ## Development
 
+##### Setup
+
 Use the following tools to ensure the code is cleaner, safer, and easier to maintain. Add the following tools using the command:
 ```
 poetry add --group dev black isort mypy pytest
 ```
 
-__`black`__. Code Formatter. Enforces a consistent and clean code style. You don't need to argue about indentation or spacing ever again.
+Use the following code to run all pre-commit files. Each pre-commit file is outlined below.
+```
+poetry run pre-commit run --all-files
+```
+
+<br>
+
+##### `black`
+Code Formatter. Enforces a consistent and clean code style. You don't need to argue about indentation or spacing ever again.
 ```
 poetry run black src/ tests/
 ```
 
-__`isort`__.  Import Sorter. Automatically sorts imports alphabetically and groups them logically.
+##### `isort`
+Import Sorter. Automatically sorts imports alphabetically and groups them logically.
 ```
 poetry run isort src/ tests/
 ```
 
-__`mypy`__. Static type checker. Catches bugs before runtime by checking your type hints.
+##### `mypy`
+Static type checker. Catches bugs before runtime by checking your type hints.
 ```
 poetry run mypy src/
 ```
 
-__`pytest`__. Testing framework. Clean, minimal testing tool with great plugin support.
+##### `pytest`
+Testing framework. Clean, minimal testing tool with great plugin support.
 ```
 poetry run pytest
 ```
